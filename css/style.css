@@ -1,4 +1,99 @@
-.box{
+body{
+  background: #f1f2f7;
+display: table;
+font-family: 'Open Sans' sans-serif;
+font-size: 16px;
+width: 100%;
+margin-top:-50px;
+}
+aside.left-panel {
+    background: silver;
+    display: table-cell;
+    height: 100vh;
+    min-height: 100%;
+    padding: 0 25px;
+    vertical-align: top;
+    width: 100px;
+    transition: width 0.3s ease;
+    overflow-y: auto;
+}
 
 
+.right-panel {
+  display: table-cell;
+  padding-left: 0 !important;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
+.open .right-panel {
+  margin-left: -210px;
+}
+
+.number-counter{
+  display: block;
+
+  font-size: 28px;
+}
+
+.title-counter{
+  display: block;
+  color:silver;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+
+
+div.container {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.container-box {
+    display: table;
+    table-layout: fixed;
+    width:30%;
+    text-align: center;
+    padding-top: 210px;
+    border-spacing: 10px;
+    justify-content: center;
+}
+.box {
+    display: table-cell;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    padding: 15px !important;
+    font-family: Verdana;
+}
+
+.leftmenu{
+  padding-top: 210px;
+width: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 80px;
+    padding: 0px;
+    width: 150px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
 }
